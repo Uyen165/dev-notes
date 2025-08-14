@@ -15,6 +15,7 @@ Dựa vào tính bất biến - invariant, sau lần pass thứ k, k phần tử
 - Tính ổn định (Stable): Nếu chỉ đổi khi a[j] > a[j + 1] (không dùng >=) thì thứ tự của phần tử bằng nhau được giữ nguyên theo thứ tự xuất hiện của chúng
 
 #### Code Python: Sắp xếp tăng dần
+'''python
 def bubble_sort_tang(lst):
     n = len(lst)
     for i in range(n - 1):
