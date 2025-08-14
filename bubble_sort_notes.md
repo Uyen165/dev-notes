@@ -5,7 +5,7 @@ Bubble Sort là thuật toán sắp xếp đơn giản, hoạt động bằng c�
 - Sau mỗi lượt pass, phần tử lớn nhất còn lại sẽ "nổi" về cuối dãy
 - Lặp lại các lượt pass, nhưng mỗi lần có thể bỏ qua phần đuôi đã đúng chỗ
 
-##Vì sao ý tưởng trên lại đúng?
+## Vì sao ý tưởng trên lại đúng?
 Dựa vào tính bất biến - invariant, sau lần pass thứ k, k phần tử lớn nhất đã nằm đúng ở k vị trí cuối cùng của mảng
 
 ### Độ phức tạp & Tính chất
