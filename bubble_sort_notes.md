@@ -29,10 +29,11 @@ def bubble_sort_tang(lst):
         if not swapped: #Neu sau pass nay ko doi cho, swapped van la False thi mang nay k can sap xep
             break #Thoat vong lap i ma khong can phai kiem tra cac pass tiep theo
     return lst
+    
 if __name__ == '__main__':
     l = list(map(int, input().split()))
     print(bubble_sort_tang(l))
-
+'''
 ##### Vào ngày đầu tiên tôi học thuật toán này ở trường từ một đàn anh dạy C++, code đó không tối ưu được như trên, và có độ phức tạp là O(n^2), vậy điều gì đã xảy ra?
 - Vòng for i được duyệt từ 0 -> n, vòng for j được duyệt từ 0 đến n - 1, không sai, nhưng điều đó khiến lặp so sánh ngay cả khi mảng đã sắp xếp xong
 - Không có 'early stop' để kết thúc vòng lặp sớm
