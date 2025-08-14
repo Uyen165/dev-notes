@@ -38,3 +38,5 @@ if __name__ == '__main__':
 - Vòng for i được duyệt từ 0 -> n, vòng for j được duyệt từ 0 đến n - 1, không sai, nhưng điều đó khiến lặp so sánh ngay cả khi mảng đã sắp xếp xong
 - Không có 'early stop' để kết thúc vòng lặp sớm
   --> Dẫn đến tổng so sánh: (n - 1) + (n - 2) + ... + 1 = (n*(n - 1)) / 2 thay vì n - 1 lần
+
+Vậy nên hãy học cách code tối ưu thay vì chỉ code "chạy được". Chúc các bạn học tốt!
