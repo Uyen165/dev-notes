@@ -15,7 +15,7 @@ Dựa vào tính bất biến - invariant, sau lần pass thứ k, k phần tử
 - Tính ổn định (Stable): Nếu chỉ đổi khi a[j] > a[j + 1] (không dùng >=) thì thứ tự của phần tử bằng nhau được giữ nguyên theo thứ tự xuất hiện của chúng
 
 #### Code Python: Sắp xếp tăng dần
-'''python
+```python
 def bubble_sort_tang(lst):
     n = len(lst)
     for i in range(n - 1):
@@ -33,7 +33,7 @@ def bubble_sort_tang(lst):
 if __name__ == '__main__':
     l = list(map(int, input().split()))
     print(bubble_sort_tang(l))
-'''
+```
 ##### Vào ngày đầu tiên tôi học thuật toán này ở trường từ một đàn anh dạy C++, code đó không tối ưu được như trên, và có độ phức tạp là O(n^2), vậy điều gì đã xảy ra?
 - Vòng for i được duyệt từ 0 -> n, vòng for j được duyệt từ 0 đến n - 1, không sai, nhưng điều đó khiến lặp so sánh ngay cả khi mảng đã sắp xếp xong
 - Không có 'early stop' để kết thúc vòng lặp sớm
