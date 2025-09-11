@@ -30,7 +30,7 @@ a = []
 path = [[-1, 0], [0, -1], [1, 0], [0, 1]] #Di chuyen 4 huong xung quanh
 #Ki thuat DFS - Depth First Search - Tim kiem theo chieu sau
 def loang(i, j):
-    a[i][j] = 0
+    a[i][j] = 0 #Danh dau da duyet qua
     for x, y in path:
         i1 = i + x
         j1 = j + y
