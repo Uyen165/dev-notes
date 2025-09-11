@@ -54,6 +54,8 @@ if __name__ == '__main__':
 ```
 - (*) Nhờ có cơ chế đệ quy (recursive stack) nên mỗi lần chạy ô nào thì nó sẽ lưu vào stack, nên sau khi hàm con chạy xong, chương trình sẽ pop stack, và quay lại đúng chỗ gần nhất mà nó đã tạm dừng (hàm cha) và tiếp tục chạy lệnh còn lại.
 ----------------------
+##### Input/ Output mẫu
+```txt
 Input:
 4 5
 1 1 0 0 0
