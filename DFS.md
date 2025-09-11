@@ -1,12 +1,12 @@
-#DFS - Depth First Search - Tìm kiếm theo chiều sâu
+# DFS - Depth First Search - Tìm kiếm theo chiều sâu
 
-##DFS là gì?
+## DFS là gì?
 Hiểu đơn giản như đi khám phá mê cung: Hãy tưởng tượng bạn đang trong một mê cung với nhiều ngã rẽ. Mỗi ngã ré dẫn đến 1 phòng mới, và mỗi phòng lại có thêm các ngã rẽ khác. DFS giống như cách bạn khám phá mê cung này theo kiểu: đi thật sâu vào 1 con đường cho đến khi không đi được nữa, rồi quay lại thử con đường khác.
 Ý tưởng chính của DFS:
 - Bắt đầu từ một điểm (gọi là nút), bạn khám phá hết tất cả các con đường đi từ điểm đó, nhưng thay vì đi hết mọi ngã rẽ cùng một lúc, bạn chọn một ngã rẽ và đi thật sâu vào đó trước. Nếu gặp ngõ cụt, bạn quay lại ngã rẽ gần nhất và thử ngã rẽ khác.
 - Để tránh vòng vòng (vì mê cung có thể có đường nối lại), bạn đánh dấu những nơi đã đi qua
 
-###VD minh họa:
+### VD minh họa:
 Code Python: Mê cung đơn giản
 - DFS (đệ quy):
 ```python
@@ -18,7 +18,7 @@ def dfs_recursive(u, graph, visited):
     for v in graph[u]:
         dfs_recursive(v, graph, visited)
 ```
-####Ứng dụng thuật toán này trong bài toán Count Island - Đếm "hòn đảo" 1 trong ma trận nhị phân
+#### Ứng dụng thuật toán này trong bài toán Count Island - Đếm "hòn đảo" 1 trong ma trận nhị phân
 Ý tưởng chính để làm bài toán này là ta sẽ sử dụng DFS, đánh dấu bằng việc mỗi lần quét qua ô 1 thì sẽ đánh dấu thành 0 để không bị đếm lại, sau đây là code Python cho bài toán này:
 ```python
 #Count Island 1 - Dem hon dao 1 trong ma tran
