@@ -21,7 +21,7 @@ def bubble_sort_tang(lst):
     for i in range(n - 1):
         swapped = False
         for j in range(n - i - 1):
-            if lst[j] > lst[j + 1]: #Đổi dấu nếu muốn sắp xếp giảm dần
+            if lst[j] > lst[j + 1]: #Đổi dấu nếu muốn sắp xếp tang dần
                 lst[j], lst[j + 1] = lst[j + 1], lst[j]
                 swapped = True
                 #Neu muon in ra chi tiet cua cac pass thi print(lst) o day
